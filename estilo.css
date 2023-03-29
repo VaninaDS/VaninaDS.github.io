@@ -1,0 +1,341 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: white;
+}
+
+a:active, a:link, a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+.barraSuperior {
+    height: 6em;
+    padding: 1em 2em;
+    animation: 2s;
+    animation-delay: initial;
+    animation-name: slideIn;
+}
+
+.primeraFila {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.redes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.icono {
+    border-radius: 5px;
+    margin: .7em .3em;
+    height: 1.5em;
+    padding: .6em .7em;
+}
+
+.celular {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1em;
+    margin-left: .3em;
+}
+
+#reservas {
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+#registrar:active, #registrar:link, #registrar:visited {
+    color: black;
+    text-decoration: none;
+}
+
+.menu {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.nombre {
+    font-family: 'Alkatra', cursive;
+    font-size: 4em;
+    position: relative;
+    top: -3em;
+}
+
+.cuerpo {
+    width: 100%;
+    min-height: 56em;
+    background-image: url("zapato.jpg");
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+}
+
+.menuDesplegable {
+    width: 100%;
+    max-width: 600px;
+    margin: 2em auto;
+    padding: 1em 2em;
+}
+
+.botonMenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#desplegable {
+    position: relative;
+    top: -40px;
+    visibility: hidden;
+    opacity: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    transition: .5s;
+}
+
+#desplegar {
+    position: relative;
+    top: 1.5em;
+    transition: .3s;
+}
+
+#desplegar:hover {
+    -webkit-box-shadow:0px 0px 141px 45px rgba(0,0,0,0.9);
+    -moz-box-shadow: 0px 0px 141px 45px rgba(0,0,0,0.9);
+    box-shadow: 0px 0px 141px 45px rgba(0,0,0,0.9);
+}
+
+#contraer {
+    position: relative;
+    top: -2.6em;
+    visibility: hidden;
+    transition: .3s;
+}
+
+#contraer:hover {
+    -webkit-box-shadow:0px 0px 141px 45px rgba(0,0,0,0.9);
+    -moz-box-shadow: 0px 0px 141px 45px rgba(0,0,0,0.9);
+    box-shadow: 0px 0px 141px 45px rgba(0,0,0,0.9);
+}
+
+.opciones {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1.5em;
+    padding:0 .2em;
+    transition: .3s;
+    border-radius: 10px;
+}
+
+.opciones:hover {
+    background-color: white;
+    -webkit-box-shadow:0px 0px 24px 4px rgba(0,0,0,0.82);
+    -moz-box-shadow: 0px 0px 24px 4px rgba(0,0,0,0.82);
+    box-shadow: 0px 0px 24px 4px rgba(0,0,0,0.82);
+    transition: .3s;
+}
+
+.divSlogan {
+    padding: 5em 0 0 8em;
+}
+
+.slogan {
+    font-family: 'Alkatra', cursive;
+    font-size: 5em;
+    color: white;
+}
+
+#calsados {
+    margin: 15vw;
+    width: 80%;
+    max-width: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#uno, #dos {
+    width: 20em;
+    margin: 0 0 0 .2em;
+    position: center;
+    transition: 1s;
+    left: 0;
+}
+
+
+#tres, #cuatro {
+    width: 18em;
+    margin: 0 0 0 .2em;
+    position: relative;
+    transition: 1s;
+    left: 0;
+}
+
+
+.footer {
+    background-color: white;
+    padding: 3em 2em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+}
+
+.datos {
+    font-family: 'Montserrat', sans-serif;
+    font-size: .6em;
+}
+
+.nombre1 {
+    font-family: 'Alkatra', cursive;
+    font-size: 3em;
+}
+
+.copyright {
+    align-items: center;
+    color: blueviolet;
+}
+
+
+
+
+.tarjeta {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0 2em;
+    margin: 0 0 8em 0;
+}
+
+#desplegable1 {
+    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    transition: .5s;
+    position: absolute;
+    left: calc(50vw - 4em);
+    top: 55em;
+}
+
+.opciones1 {
+    color: rgb(227, 24, 227); font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1.5em;
+    padding:0 .2em;
+    transition: .3s;
+    border-radius: 10px;
+}
+.opciones1:hover {
+    background-color: white;
+    -webkit-box-shadow:0px 0px 24px 4px rgba(0,0,0,0.82);
+    -moz-box-shadow: 0px 0px 24px 4px rgba(0,0,0,0.82);
+    box-shadow: 0px 0px 24px 4px rgba(0,0,0,0.82);
+    transition: .3s;
+}
+
+
+.tarjetaProducto {
+    background-color: rgb(255, 255, 255, .3);
+    width: 30em;
+    border-radius: 20px;
+    padding: 1em;
+    margin: 1em;
+}
+
+.tituloProducto {
+    color: purple;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5em;
+    font-weight: 600;
+    text-align: center;
+    margin: 0 0 1em 0;
+}
+
+.zapato1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.tarjetaProducto img {
+    width: 100%;
+    max-width: 100%;
+    height: 25em;
+    border-radius: 0.5em 0.5em 0 0;
+}
+
+
+.imagen {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+@keyframes slideIn {
+    from {
+        margin-top: -100%;
+    }
+
+    to {
+        margin-top: 0%;
+    }
+}
+
+
+
+@media only screen and (max-width:1200px){
+    body {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width:900px){
+    body {
+        font-size: 10px;
+    }
+    #calsados{
+        width: 66vw;
+    }
+}
+
+@media only screen and (max-width:720px){
+    body {
+        font-size: 6px;
+    }
+    .slogan{
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width:550px){
+
+    .slogan{
+        font-size: 5em;
+        margin: auto;
+    }
+    
+}
